@@ -1,10 +1,10 @@
 # write your method here
 
 def crazy_strings(a,b)
- $a=a.reverse.upcase
- $b=b.gsub("S","Z").swapcase
+ a=a.reverse.upcase
+ b=b.gsub("S","Z").gsub("s","z").swapcase
   return "#{a} #{b}"
 end 
-  crazy_strings("Hello","Friends")
-  puts "#{$a} #{$b}"
+
+  puts crazy_strings("Hello","Friends")
   
